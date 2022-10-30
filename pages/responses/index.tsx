@@ -1,6 +1,6 @@
 import { message } from "../../types";
 
-export default function Responses({ data }: { data: message[] } ): JSX.Element {
+export default function Responses({ data }: { data: message[] } ) {
   return (
     <div>
       {data.map((data) => 

@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import { message } from "../types";
 
 export default function Home() {
   const [From, setFrom] = useState<string>()
@@ -28,6 +27,8 @@ export default function Home() {
           headers: headers
         }
       )
+
+      return response
   }
   
   return (
