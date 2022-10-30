@@ -4,7 +4,7 @@ export default function Responses({ data }: { data: message[] } ): JSX.Element {
   return (
     <div>
       {data.map((data) => 
-        <div>
+        <div key={data.id}>
           <h1>From: {data.from? data.from : 'anonymus'}</h1>
           <h1>To: {data.to? data.to : 'anonymus'}</h1>
           <p>{data.message}</p>
